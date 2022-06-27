@@ -1,5 +1,7 @@
-s=input()
-v=list(s.split())
-x=len(v)
-for i in range(x-1,-1,-1):
-    print(v[i],end=" ")
+a=input()
+v=x=0
+v=len(a)
+arr=list(a.split())
+x=len(arr)
+for j in range(x-1,-1,-1):
+    print(arr[j],end=" ")
