@@ -1,4 +1,10 @@
 
+
+
+
+
+
+
 def value(r):
     if (r == 'I'):
         return 1
@@ -27,7 +33,11 @@ def romanToDecimal(str):
         s1 = value(str[i])
  
         if (i + 1 < len(str)):
+ 
+            # Getting value of symbol s[i + 1]
             s2 = value(str[i + 1])
+ 
+            # Comparing both values
             if (s1 >= s2):
                 res = res + s1
                 i = i + 1
@@ -41,6 +51,3 @@ def romanToDecimal(str):
     return res
 s=input()
 print(romanToDecimal(s))
-
-
-
