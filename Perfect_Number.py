@@ -1,9 +1,9 @@
 n=int(input())
-s=0
-for i in range(1,n//2+1):
+sum=0
+for i in range(1,n):
     if n%i==0:
-        s=s+i
-if s==n:
+        sum=sum+i 
+if(sum==n):
     print(True)
 else:
     print(False)
