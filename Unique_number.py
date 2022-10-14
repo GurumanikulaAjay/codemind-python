@@ -1,6 +1,3 @@
-
-
-
 s=input()
 v=0
 v=len(s)
@@ -19,4 +16,3 @@ if(x==0):
     print('Unique Number')
 else:
     print('Not Unique Number')
-    
