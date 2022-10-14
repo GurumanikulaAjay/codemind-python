@@ -1,5 +1,5 @@
 t=int(input())
-for i in range(0,t+1) :
-    m,n=map(int,input().split())
-    s=m+n
-    print(s)
+for i in range(t):
+    a,b=map(str,input().split())
+    print(int(a)+int(b))
+    
