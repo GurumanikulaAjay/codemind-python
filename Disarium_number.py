@@ -1,18 +1,14 @@
 n=int(input())
-c=0
+q=str(n)
+l=len(q)
+q=int(q)
 s=0
-temp=n
-while n>0:
+while n:
     r=n%10
-    n//=10
-    c+=1
-n=temp
-while n>0:
-    r=n%10
-    s=s+pow(r,c)
+    s+=r**l
+    l-=1
     n=n//10
-    c-=1
-if s==temp:
-    print("True")
+if s==q:
+    print(True)
 else:
-    print("False")
+    print(False)
