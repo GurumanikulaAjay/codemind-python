@@ -1,15 +1,14 @@
 n=int(input())
-if n==0 or n==1:
-    print(n)
+fa=0
+fb=1
+fn=0
+a=[]
+for i in range(100):
+    a.append(fa)
+    fn=fa+fb
+    fa=fb
+    fb=fn
+if n in a:
+    print(True)
 else:
-    a=0
-    b=1
-    c=a+b
-    while c<n:
-        a=b
-        b=c
-        c=a+b
-    if c==n:
-        print("True")
-    else:
-        print("False")
+    print(False)
