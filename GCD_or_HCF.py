@@ -1,6 +1,6 @@
-def gcd(a,b):
-    if(b==0):
-        return a
-    return gcd(b,a%b)
+def hcf(x,y):
+    if x%y==0:
+        return y
+    return hcf(y,x%y)
 a,b=map(int,input().split())
-print(gcd(a,b))
+print(hcf(a,b))
