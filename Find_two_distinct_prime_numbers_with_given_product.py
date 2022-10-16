@@ -1,25 +1,22 @@
-
-def prime(a):
-    c=0
-    for i in range(1,a):
-        if(a%i==0):
-            c+=1
-    if(c==1):
-        return 1
-    else:
+def prime(x):
+    if x<2:
         return 0
-a=int(input())
-c=0
-for i in range(1,a):
-    if(prime(i)==1):
-        for j in range(1,a):
-            if(prime(j)==1):
-                if(i!=j):
-                    if(i*j==a):
-                        c=1
-                        print(i,j)
-                        break
-        if(c==1):
-            break
-if(c==0):
-    print("-1")
+    else:
+        for i in range(2,int(x**0.5)+1):
+            if x%i==0:
+                return o
+    return 1
+n=int(input())
+f=0
+for i in range(1,n):
+    for j in range(1,n):
+        if i*j==n:
+            if prime(i)==1 and prime(j)==1:
+                f=1
+                print(i,j,end=" ")
+                break
+    if f==1:
+        break
+if f==0:
+    print(-1)
+        
