@@ -1,17 +1,12 @@
 n=int(input())
-s=n*n
-sum1=0
-sum2=0
-while n>0:
-    w=n%10
-    sum1=sum1*10+w
-    n=n//10
-s1=sum1*sum1
-while s1>0:
-    a=s1%10
-    sum2=sum2*10+a
-    s1=s1//10
-if s==sum2:
+v=n**2
+v=str(v)
+n=str(n)
+n=n[::-1]
+n=int(n)
+x=n**2
+x=str(x)
+if x==v[::-1]:
     print(True)
 else:
     print(False)
