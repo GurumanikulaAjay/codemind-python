@@ -2,16 +2,13 @@
 
 
 
-
-
-
-
-
-
-
 a,b=map(int,input().split())
 arr=list(map(int,input().split()))
 arr2=list(map(int,input().split()))
+n=set(arr)
+m=set(arr2)
+n=list(arr)
+m=list(arr2)
 x=0
 for i in range(a):
     for j in range(a):
