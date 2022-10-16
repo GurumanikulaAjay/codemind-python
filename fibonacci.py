@@ -1,13 +1,11 @@
-def fib(n):
-    a,b=0,1
-    print(a,b,end=' ')
-    i=2
-    while i<n:
-        c=a+b
-        print(c,end=' ')
-        a=b
-        b=c
-        i+=1
-    
 n=int(input())
-fib(n)
+fa=0
+fb=1
+fn=0
+a=[]
+for i in range(n):
+    a.append(fa)
+    fn=fa+fb
+    fa=fb
+    fb=fn
+print(*a)
