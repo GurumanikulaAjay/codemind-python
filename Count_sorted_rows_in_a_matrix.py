@@ -1,15 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
 def col_sor(l):
     m=sorted(l)
     n=sorted(l,reverse=True)
